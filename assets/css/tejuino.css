@@ -1,0 +1,269 @@
+/* ------------------------------- */
+/* Variables */
+/* ------------------------------- */
+/* Reset Properties */
+@import url(c:\Users\ferso\Documents\_Dev\_PozolCode\Tejuino\css\reset.css);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* ------------------------------- */
+/* Grid Properties */
+.container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 100%;
+}
+
+.container::before, .container::after {
+  content: "";
+  display: table;
+}
+
+.container::after {
+  clear: both;
+}
+
+.row {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 1rem;
+  width: 100%;
+}
+
+.row::before, .row::after {
+  content: "";
+  display: table;
+}
+
+.row::after {
+  clear: both;
+}
+
+/* General Column Configuration */
+[class^="col"] > .content {
+  margin: 0 1rem;
+}
+
+[class^="col"].one {
+  width: 8.33333%;
+}
+
+[class^="col"].two {
+  width: 16.66667%;
+}
+
+[class^="col"].three {
+  width: 25%;
+}
+
+[class^="col"].four {
+  width: 33.33333%;
+}
+
+[class^="col"].five {
+  width: 41.66667%;
+}
+
+[class^="col"].six {
+  width: 50%;
+}
+
+[class^="col"].seven {
+  width: 58.33333%;
+}
+
+[class^="col"].eight {
+  width: 66.66667%;
+}
+
+[class^="col"].nine {
+  width: 75%;
+}
+
+[class^="col"].ten {
+  width: 83.33333%;
+}
+
+[class^="col"].eleven {
+  width: 91.66667%;
+}
+
+[class^="col"].twelve {
+  width: 100%;
+}
+
+/* Column Sizes Media Queries */
+/* Size: Small */
+@media screen and (max-width: 580px) {
+  .col-sm.one, .col-sm.two, .col-sm.three, .col-sm.four, .col-sm.five, .col-sm.six, .col-sm.seven, .col-sm.eight, .col-sm.nine, .col-sm.ten, .col-sm.eleven, .col-sm.twelve {
+    width: 100%;
+  }
+}
+
+/* Size: Medium */
+@media screen and (max-width: 768px) {
+  .col-md.one, .col-md.two, .col-md.three, .col-md.four, .col-md.five, .col-md.six, .col-md.seven, .col-md.eight, .col-md.nine, .col-md.ten, .col-md.eleven, .col-md.twelve {
+    width: 100%;
+  }
+}
+
+/* Size: Large */
+@media screen and (max-width: 992px) {
+  .col-lg.one, .col-lg.two, .col-lg.three, .col-lg.four, .col-lg.five, .col-lg.six, .col-lg.seven, .col-lg.eight, .col-lg.nine, .col-lg.ten, .col-lg.eleven, .col-lg.twelve {
+    width: 100%;
+  }
+}
+
+/* Size: Extra Large */
+@media screen and (max-width: 1200px) {
+  .col-xl.one, .col-xl.two, .col-xl.three, .col-xl.four, .col-xl.five, .col-xl.six, .col-xl.seven, .col-xl.eight, .col-xl.nine, .col-xl.ten, .col-xl.eleven, .col-xl.twelve {
+    width: 100%;
+  }
+}
+
+/* ------------------------------- */
+/* General Properties */
+html {
+  font-size: 10px;
+}
+
+html body {
+  color: #1a1a1a;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* ------------------------------- */
+/* Typography */
+a {
+  color: #1a1a1a;
+  font-size: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #004c9c;
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.8;
+  margin: .5rem 0;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+
+h3 {
+  font-size: 3.6rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 2.4rem;
+}
+
+h6 {
+  font-size: 1.8rem;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+/* ------------------------------- */
+/* Navbar */
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0.5rem 2rem;
+}
+
+nav ul li::after {
+  content: "|";
+  position: relative;
+}
+
+nav ul li:nth-last-child(1)::after {
+  content: "";
+}
+
+/* ------------------------------- */
+/* Buttons */
+button {
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 0.75rem 2rem;
+  text-transform: uppercase;
+}
+
+button.btn {
+  background-color: #003366;
+  border: 2px solid #0052a3;
+  color: #ffffff;
+}
+
+button.btn:hover {
+  background-color: #0052a3;
+  cursor: pointer;
+}
+
+button.btn-main {
+  background-color: #119600;
+  border: 2px solid #15b300;
+  color: #ffffff;
+}
+
+button.btn-main:hover {
+  background-color: #15b300;
+  cursor: pointer;
+}
+
+button.btn-secondary {
+  background-color: #dadada;
+  border: 2px solid #a71515;
+  color: #1a1a1a;
+}
+
+button.btn-secondary:hover {
+  background-color: #a71515;
+  color: #ffffff;
+  cursor: pointer;
+}
+/*# sourceMappingURL=tejuino.css.map */
