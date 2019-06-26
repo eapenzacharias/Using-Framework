@@ -95,32 +95,32 @@ html .container .portfolio .port:hover .content {
 }
 
 html .container .portfolio .row:nth-child(1) div:nth-child(1) .port {
-  background-image: url("../imgs/1_thumb.jpg");
+  background-image: url("../img/1_thumb.jpg");
   margin-right: 1rem;
 }
 
 html .container .portfolio .row:nth-child(1) div:nth-child(2) .port {
-  background-image: url("../imgs/2_thumb.jpg");
+  background-image: url("../img/2_thumb.jpg");
   margin-left: 1rem;
 }
 
 html .container .portfolio .row:nth-child(2) div:nth-child(1) .port {
-  background-image: url("../imgs/3_thumb.jpg");
+  background-image: url("../img/3_thumb.jpg");
   margin-right: 1rem;
 }
 
 html .container .portfolio .row:nth-child(2) div:nth-child(2) .port {
-  background-image: url("../imgs/4_thumb.jpg");
+  background-image: url("../img/4_thumb.jpg");
   margin-left: 1rem;
 }
 
 html .container .portfolio .row:nth-child(3) div:nth-child(1) .port {
-  background-image: url("../imgs/5_thumb.jpg");
+  background-image: url("../img/5_thumb.jpg");
   margin-right: 1rem;
 }
 
 html .container .portfolio .row:nth-child(3) div:nth-child(2) .port {
-  background-image: url("../imgs/6_thumb.jpg");
+  background-image: url("../img/6_thumb.jpg");
   margin-left: 1rem;
 }
 
