@@ -186,4 +186,10 @@ html .place {
   color: #818181;
   font-size: 1rem;
 }
+
+html .skill-percentage {
+  color: #e0a80d;
+  font-weight: 700;
+  margin-right: 1%;
+}
 /*# sourceMappingURL=style.css.map */
