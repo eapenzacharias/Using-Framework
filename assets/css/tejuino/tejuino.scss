@@ -1,0 +1,252 @@
+/* ------------------------------- */
+/* Variables */
+$buttonfocusdefault: #003366;
+$buttonfocusdefaulthover: #0052a3;
+$buttonfocusmain: #119600;
+$buttonfocusmainhover: #15b300;
+$buttonfocussecondary: #dadada;
+$buttonfocussecondaryhover: #a71515;
+$linkcolor: #004c9c;
+$maincolor: #1a1a1a;
+$buttoncolor: #ffffff;
+
+/* ------------------------------- */
+/* Reset Properties */
+
+@import 'reset.css';
+
+* {
+  box-sizing: border-box;
+}
+
+/* ------------------------------- */
+/* Grid Properties */
+
+.container {
+  &::before,
+  &::after {
+    content: "";
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+  box-sizing: border-box;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 100%;
+}
+
+.row {
+  &::before,
+  &::after {
+    content: "";
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+  align-content: center;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 1rem;
+  width: 100%;
+}
+
+/* General Column Configuration */
+[class^="col"] {
+  & > .content {
+    margin: 0 1rem;
+  }
+  &.one         { width: (100% / 12) }
+  &.two         { width: (100% / 6) }
+  &.three       { width: (100% / 4) }
+  &.four        { width: (100% / 3) }
+  &.five        { width: ((100% / 12) * 5) }
+  &.six         { width: (100% / 2) }
+  &.seven       { width: ((100% / 12) * 7) }
+  &.eight       { width: ((100% / 12) * 8) }
+  &.nine        { width: ((100% / 12) * 9) }
+  &.ten         { width: ((100% / 12) * 10) }
+  &.eleven      { width: ((100% / 12) * 11) }
+  &.twelve      { width: 100% }
+}
+
+/* Column Sizes Media Queries */
+/* Size: Small */
+@media screen and (max-width: 580px){
+  .col-sm {
+    &.one,
+    &.two,
+    &.three,
+    &.four,
+    &.five,
+    &.six,
+    &.seven,
+    &.eight,
+    &.nine,
+    &.ten,
+    &.eleven,
+    &.twelve    { width: 100% }
+  }
+}
+/* Size: Medium */
+@media screen and (max-width: 768px){
+  .col-md {
+    &.one,
+    &.two,
+    &.three,
+    &.four,
+    &.five,
+    &.six,
+    &.seven,
+    &.eight,
+    &.nine,
+    &.ten,
+    &.eleven,
+    &.twelve    { width: 100% }
+  }
+}
+/* Size: Large */
+@media screen and (max-width: 992px){
+  .col-lg {
+    &.one,
+    &.two,
+    &.three,
+    &.four,
+    &.five,
+    &.six,
+    &.seven,
+    &.eight,
+    &.nine,
+    &.ten,
+    &.eleven,
+    &.twelve    { width: 100% }
+  }
+}
+/* Size: Extra Large */
+@media screen and (max-width: 1200px){
+  .col-xl {
+    &.one,
+    &.two,
+    &.three,
+    &.four,
+    &.five,
+    &.six,
+    &.seven,
+    &.eight,
+    &.nine,
+    &.ten,
+    &.eleven,
+    &.twelve    { width: 100% }
+  }
+}
+
+/* ------------------------------- */
+/* General Properties */
+
+html {
+  font-size: 10px;
+  body {
+    color: $maincolor;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* ------------------------------- */
+/* Typography */
+
+a {
+  color: $maincolor;
+  font-size: inherit;
+  text-decoration: none;
+  &:hover {
+    color: $linkcolor;
+    text-decoration: underline;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.8;
+  margin: .5rem 0;
+}
+
+h1    { font-size: 5rem; }
+h2    { font-size: 4.2rem; }
+h3    { font-size: 3.6rem; }
+h4    { font-size: 3rem; }
+h5    { font-size: 2.4rem; }
+h6    { font-size: 1.8rem; }
+
+p     { margin: 0.75rem 0; }
+
+/* ------------------------------- */
+/* Navbar */
+
+nav {
+  ul {
+    list-style: none;
+    li {
+      margin: 0.5rem 2rem;
+      &::after {
+        content: "|";
+        position: relative;
+      }
+      &:nth-last-child(1)::after {
+        content: "";
+      }
+    }
+  }
+}
+
+/* ------------------------------- */
+/* Buttons */
+button {
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 0.75rem 2rem;
+  text-transform: uppercase;
+  &.btn {
+    background-color: $buttonfocusdefault;
+    border: 2px solid $buttonfocusdefaulthover;
+    color: $buttoncolor;
+    &:hover {
+      background-color: $buttonfocusdefaulthover;
+      cursor: pointer;
+    }
+  }
+  &.btn-main {
+    background-color: $buttonfocusmain;
+    border: 2px solid $buttonfocusmainhover;
+    color: $buttoncolor;
+    &:hover {
+      background-color: $buttonfocusmainhover;
+      cursor: pointer;
+    }
+  }
+  &.btn-secondary {
+    background-color: $buttonfocussecondary;
+    border: 2px solid $buttonfocussecondaryhover;
+    color: $maincolor;
+    &:hover {
+      background-color: $buttonfocussecondaryhover;
+      color: $buttoncolor;
+      cursor: pointer;
+    }
+  }
+}
