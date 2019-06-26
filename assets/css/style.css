@@ -65,6 +65,14 @@ html .container .contact span {
   font-weight: 400;
 }
 
+html .container .contact.bottom {
+  border-bottom: 1px solid #979899;
+}
+
+html .container .contact.top {
+  border-top: 1px solid #979899;
+}
+
 html .container .discription {
   font-size: 1.4rem;
 }
