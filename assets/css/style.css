@@ -1,0 +1,89 @@
+html body {
+  color: #979899;
+  background-color: #292a2a;
+  font: 400 1.7rem 'Lato', sans-serif;
+  margin: 0;
+  padding: 3.5rem 0;
+}
+
+html h1 {
+  font-size: 6.2rem;
+  line-height: 1;
+}
+
+html h1 span:nth-child(1) {
+  font-weight: 300;
+  text-transform: lowercase;
+}
+
+html h1 span:nth-last-child(1) {
+  color: #e0a80d;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+html .container {
+  padding: 4rem 0;
+}
+
+html .container h4 {
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+html .container p {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+html .container .aside {
+  text-align: right;
+  padding-right: 7rem;
+}
+
+html .container .aside h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+html .container .aside .sub-head {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+html .container .discription {
+  font-size: 1.4rem;
+}
+
+html .container .num {
+  color: #e0a80d;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+html .container .top-0 {
+  margin-top: 3rem;
+}
+
+html .even {
+  background-color: #2d2e2e;
+  width: 100%;
+}
+
+html .odd {
+  background-color: #292a2a;
+  width: 100%;
+}
+
+html .profession {
+  font-size: 2.1rem;
+  font-weight: 300;
+  line-height: .75;
+}
+
+html .profile-img {
+  border-radius: 50%;
+  width: 23.6rem;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */

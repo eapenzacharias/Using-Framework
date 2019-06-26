@@ -1,0 +1,78 @@
+$bodycolor: #979899;
+$altcolor: #e0a80d;
+
+html {
+    body {
+        color: $bodycolor;
+        background-color: #292a2a;
+        font:400 1.7rem 'Lato', sans-serif;
+        margin: 0;
+        padding: 3.5rem 0;
+    }
+    h1 {
+        font-size: 6.2rem;
+        line-height: 1;
+        span:nth-child(1) {
+            font-weight:300;
+            text-transform: lowercase;
+        }
+        span:nth-last-child(1) {
+            color: $altcolor;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+    .container {
+        padding: 4rem 0;
+        h4 {
+           font-size: 1.7rem;
+           margin: 0; 
+        }
+        p {
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+        }
+        .aside {
+            text-align: right;
+            padding-right: 7rem;
+            h2 {
+                font-size: 1.7rem;
+                font-weight: 700;
+            }
+            .sub-head {
+                font-size: 1.4rem;
+                font-weight: 400;
+            }
+        }
+        .discription {
+            font-size: 1.4rem;
+        }
+        .num {
+            color: $altcolor;
+            font-size: 1.7rem;
+            font-weight: 700;
+        }
+        .top-0 {
+            margin-top: 3rem;
+        }
+    }
+    .even {
+        background-color: #2d2e2e;
+        width: 100%;
+    }
+    .odd {
+        background-color: #292a2a;
+        width: 100%;
+        
+    }
+    .profession {
+        font-size: 2.1rem;
+        font-weight: 300;
+        line-height: .75;
+    }
+    .profile-img {
+        border-radius: 50%;
+        width: 23.6rem;
+        margin: 0 auto;
+    }
+}
