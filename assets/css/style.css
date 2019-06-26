@@ -79,16 +79,17 @@ html .container .portfolio .port {
   background-repeat: no-repeat;
   color: #ffffff;
   min-height: 25rem;
+  text-align: center;
 }
 
 html .container .portfolio .port .content {
   background-color: #0000009c;
   display: none;
   height: 25rem;
-  padding: 2rem;
+  padding: 6rem 2rem;
 }
 
-html .container .portfolio .port .content:hover {
+html .container .portfolio .port:hover .content {
   display: block;
 }
 
@@ -113,12 +114,12 @@ html .container .portfolio .row:nth-child(2) div:nth-child(2) .port {
 }
 
 html .container .portfolio .row:nth-child(3) div:nth-child(1) .port {
-  background-image: url("../imgs/3_thumb.jpg");
+  background-image: url("../imgs/5_thumb.jpg");
   margin-right: 1rem;
 }
 
 html .container .portfolio .row:nth-child(3) div:nth-child(2) .port {
-  background-image: url("../imgs/4_thumb.jpg");
+  background-image: url("../imgs/6_thumb.jpg");
   margin-left: 1rem;
 }
 
