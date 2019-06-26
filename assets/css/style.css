@@ -148,4 +148,24 @@ html .profile-img {
   width: 23.6rem;
   margin: 0 auto;
 }
+
+html .social-icons button {
+  background-color: #323333;
+  border: 1px solid #323333;
+  border-radius: 0.15rem;
+}
+
+html .social-icons button:hover {
+  background-color: #2d2e2e;
+  cursor: pointer;
+}
+
+html .social-icons button > a {
+  color: #717273;
+  font-size: 2.1rem;
+}
+
+html .social-icons button > a:hover {
+  color: #e0a80d;
+}
 /*# sourceMappingURL=style.css.map */
