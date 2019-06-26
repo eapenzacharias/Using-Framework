@@ -21,7 +21,7 @@
 }
 
 .container::before, .container::after {
-  content: "";
+  content: " ";
   display: table;
 }
 
