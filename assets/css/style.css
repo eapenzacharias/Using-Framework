@@ -234,4 +234,8 @@ html .clients-images a img {
 html .clients-images a img:hover {
   opacity: 1;
 }
+
+html .awards-container {
+  padding-right: 5rem;
+}
 /*# sourceMappingURL=style.css.map */
