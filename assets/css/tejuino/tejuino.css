@@ -53,6 +53,10 @@
   clear: both;
 }
 
+.col {
+  width: auto;
+}
+
 [class^="col-"] {
   width: 100%;
 }
