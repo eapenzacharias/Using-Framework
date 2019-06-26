@@ -100,6 +100,7 @@ html {
           background-position: center;
           background-repeat: no-repeat;
           color: #ffffff;
+          max-width: 450px;
           min-height: 25rem;
           text-align: center;
         .content {
@@ -157,6 +158,9 @@ html {
         }
       }
     }
+    .skill-container {
+      margin: 1.5rem 0;
+    }
     .top-0 {
       margin-top: 3rem;
     }
@@ -174,6 +178,7 @@ html {
     font-size: 2.1rem;
     font-weight: 300;
     line-height: .75;
+    padding: 2rem 0;
   }
   .profile-img {
     border-radius: 50%;
@@ -228,5 +233,29 @@ html {
   }
   .awards-container {
     padding-right: 5rem;
+  }
+  @media screen and (max-width:992px){
+    .even, .odd {
+      background-color: $lightgrey;
+    }
+    .container {
+      h1, .profession, .social-icons {
+        margin-left:auto;
+        margin-right: auto;
+        text-align: center;
+      }
+      .aside {
+        background-color: $darkgrey;
+        border-bottom: 1px solid $bodycolor;
+        border-top: 1px solid $bodycolor; 
+        margin: 0 -1rem;
+        padding: 2rem 2rem;
+        text-align: left;
+        width: 110%
+      }
+      .port {
+        margin: 1.5rem auto 1.5rem auto !important;
+      }
+    }
   }
 }

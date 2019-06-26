@@ -111,6 +111,7 @@ html .container .portfolio .port {
   background-position: center;
   background-repeat: no-repeat;
   color: #ffffff;
+  max-width: 450px;
   min-height: 25rem;
   text-align: center;
 }
@@ -156,6 +157,10 @@ html .container .portfolio .row:nth-child(3) div:nth-child(2) .port {
   margin-left: 1rem;
 }
 
+html .container .skill-container {
+  margin: 1.5rem 0;
+}
+
 html .container .top-0 {
   margin-top: 3rem;
 }
@@ -177,6 +182,7 @@ html .profession {
   font-size: 2.1rem;
   font-weight: 300;
   line-height: .75;
+  padding: 2rem 0;
 }
 
 html .profile-img {
@@ -237,5 +243,28 @@ html .clients-images a img:hover {
 
 html .awards-container {
   padding-right: 5rem;
+}
+
+@media screen and (max-width: 992px) {
+  html .even, html .odd {
+    background-color: #2d2e2e;
+  }
+  html .container h1, html .container .profession, html .container .social-icons {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  html .container .aside {
+    background-color: #292a2a;
+    border-bottom: 1px solid #979899;
+    border-top: 1px solid #979899;
+    margin: 0 -1rem;
+    padding: 2rem 2rem;
+    text-align: left;
+    width: 110%;
+  }
+  html .container .port {
+    margin: 1.5rem auto 1.5rem auto !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
