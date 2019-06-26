@@ -43,9 +43,9 @@ html .container .aside {
 }
 
 html .container .aside h2 {
-  color: #e0a80d;
   font-size: 1.7rem;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 html .container .aside .sub-head {
