@@ -36,11 +36,21 @@ html {
             text-align: right;
             padding-right: 7rem;
             h2 {
+                color: $altcolor;
                 font-size: 1.7rem;
                 font-weight: 700;
             }
             .sub-head {
                 font-size: 1.4rem;
+                font-weight: 400;
+            }
+        }
+        .contact {
+            font-size: 1.4rem;
+            h6 {
+                font-size: inherit;
+            }
+            span {
                 font-weight: 400;
             }
         }
@@ -51,6 +61,65 @@ html {
             color: $altcolor;
             font-size: 1.7rem;
             font-weight: 700;
+        }
+        .portfolio {
+            .port {
+                background-position: center;
+                background-repeat: no-repeat;
+                color: #ffffff;
+                min-height: 25rem;
+                .content {
+                    background-color: #0000009c;
+                    display: none;
+                    height: 25rem;
+                    padding: 2rem;
+                }
+                .content:hover {
+                    display: block;
+                }
+            }
+            .row:nth-child(1) {
+                div:nth-child(1) {
+                    .port {
+                        background-image: url("../imgs/1_thumb.jpg");
+                        margin-right:1rem;
+                    }
+                }
+                div:nth-child(2) {
+                    .port {
+                        background-image: url("../imgs/2_thumb.jpg");
+                        margin-left:1rem;
+                    }
+                }
+            }
+            .row:nth-child(2) {
+                div:nth-child(1) {
+                    .port {
+                        background-image: url("../imgs/3_thumb.jpg");
+                        margin-right:1rem;
+                    }
+                }
+                div:nth-child(2) {
+                    .port {
+                        background-image: url("../imgs/4_thumb.jpg");
+                        margin-left:1rem;
+                    }
+                }
+            }
+            .row:nth-child(3) {
+                div:nth-child(1) {
+                    .port {
+                        background-image: url("../imgs/3_thumb.jpg");
+                        margin-right:1rem;
+                    }
+                }
+                div:nth-child(2) {
+                    .port {
+                        background-image: url("../imgs/4_thumb.jpg");
+                        margin-left:1rem;
+                    }
+                }
+            }
         }
         .top-0 {
             margin-top: 3rem;
