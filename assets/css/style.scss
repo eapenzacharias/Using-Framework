@@ -95,6 +95,13 @@ html {
       font-size: 1.7rem;
       font-weight: 700;
     }
+    .platform {
+      color: $altcolor;
+    }
+    .platform:hover {
+      color: #fff;
+      text-decoration: none;
+    }
     .portfolio {
       .port {
           background-position: center;
@@ -232,7 +239,15 @@ html {
     }
   }
   .awards-container {
+    
     padding-right: 5rem;
+    hr {
+      background-color: $altcolor;
+      color: $altcolor;
+      height: .5rem;
+      margin-left: 0;
+      width: 45%;
+    }
   }
   @media screen and (max-width:992px){
     .even, .odd {

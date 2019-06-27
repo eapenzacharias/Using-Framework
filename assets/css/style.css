@@ -107,6 +107,15 @@ html .container .num {
   font-weight: 700;
 }
 
+html .container .platform {
+  color: #e0a80d;
+}
+
+html .container .platform:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 html .container .portfolio .port {
   background-position: center;
   background-repeat: no-repeat;
@@ -243,6 +252,14 @@ html .clients-images a img:hover {
 
 html .awards-container {
   padding-right: 5rem;
+}
+
+html .awards-container hr {
+  background-color: #e0a80d;
+  color: #e0a80d;
+  height: .5rem;
+  margin-left: 0;
+  width: 45%;
 }
 
 @media screen and (max-width: 992px) {
