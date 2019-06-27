@@ -197,16 +197,12 @@ html {
       background-color: #323333;
       border: 1px solid #323333;
       border-radius: 0.15rem;
+      color: #717273;
+      font-size: 2.1rem;
       &:hover {
         background-color: $lightgrey;
         cursor: pointer;
-      }
-      & > a {
-        color: #717273;
-        font-size: 2.1rem;
-        &:hover {
-          color: $altcolor;
-        }
+        color: $altcolor;
       }
     }
   }
